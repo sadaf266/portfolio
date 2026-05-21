@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syed Sadaf Almas — Portfolio. Data Engineer & Cloud Enthusiast specializing in Python, SQL, AWS, and IoT systems.">
+    <title>Syed Sadaf Almas | Data Engineer & Cloud Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION HEADER -->
+    <header class="header-wrapper">
+        <nav class="nav-container">
+            <div class="logo">
+                Sadaf<span>Almas</span><span class="logo-dot"></span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Timeline</a></li>
+                <li><a href="#certifications">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="#contact" class="btn-pill secondary">Let's Connect</a>
+            </div>
+            
+            <div class="mobile-menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- 2. HERO SECTION (Layout inspired by uploaded screenshot) -->
+    <main>
+        <section id="home" class="hero">
+            <!-- Left Side: Editorial Typography & Selection Box -->
+            <div class="hero-content">
+                <div class="hero-subtitle-tag">Portfolio</div>
+                
+                <h1 class="hero-title">
+                    <span>Syed Sadaf</span>
+                    <span>Almas</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Designing robust cloud infrastructure and real-time data pipelines. Bridging the gap between embedded IoT hardware and scalable data architectures.
+                </p>
+                
+                <!-- Bounding Vector-Style Selection Box exactly like original -->
+                <div class="selection-box-wrapper">
+                    <div class="selection-box">
+                        <span class="handle handle-tl"></span>
+                        <span class="handle handle-tr"></span>
+                        <span class="handle handle-bl"></span>
+                        <span class="handle handle-br"></span>
+                        <h3>Data Engineer</h3>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-pill primary">Become a Client</a>
+                    <a href="Resume-sadaf.pdf" download class="btn-pill secondary">
+                        Get Resume
+                        <svg style="margin-left: 8px; vertical-align: middle;" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Center Column: Curved Rotating SVG Badge -->
+            <div class="hero-center-widget">
+                <div class="spin-badge-container">
+                    <svg class="spin-badge-text" viewBox="0 0 100 100">
+                        <path id="badgeCirclePath" d="M 50,50 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+                        <text>
+                            <textPath href="#badgeCirclePath" startOffset="0%" fill="#5C5B57" font-size="7.2" font-weight="600" letter-spacing="1.1">
+                                • DATA ENGINEER • AWS CLOUD • PYTHON & SQL • IOT • AI & ML
+                            </textPath>
+                        </text>
+                    </svg>
+                    <div class="spin-badge-heart">💛</div>
+                </div>
+            </div>
+
+            <!-- Right Side: Double-Circle Cropped Portrait Frame with Overlapping Badges -->
+            <div class="hero-image-area">
+                <div class="portrait-container">
+                    <div class="portrait-container-inner">
+                        <img src="profile.png" alt="Syed Sadaf Almas portrait">
+                    </div>
+                    
+                    <!-- Floating Pill Badge top-right -->
+                    <button class="btn-badge floating-connect" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Let's Connect</button>
+                    
+                    <!-- Overlapping Review Badge bottom-left -->
+                    <div class="floating-testimonial">
+                        <p>Sadaf bridges the gap between hardware IoT sensors and robust AWS cloud databases with absolute precision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TECHNOLOGY ECOSYSTEM MARQUEE BAR -->
+        <section class="partners-section">
+            <div class="container partners-container">
+                <div class="partners-title">Core Toolkit</div>
+                <div class="partners-marquee-container">
+                    <div class="partners-marquee">
+                        <!-- Python -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            Python
+                        </span>
+                        <!-- AWS -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+                            AWS Cloud
+                        </span>
+                        <!-- SQL -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            SQL Databases
+                        </span>
+                        <!-- Databricks -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3L2 8l10 5 10-5-10-5zM2 12l10 5 10-5M2 16l10 5 10-5"/></svg>
+                            Databricks
+                        </span>
+                        <!-- Airflow -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2L1 21h22L12 2zm0 4l7.5 13h-15L12 6z"/></svg>
+                            Apache Airflow
+                        </span>
+                        <!-- Snowflake -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm6 14.25l-6 3.75-6-3.75V8.75l6-3.75 6 3.75v7.5z"/></svg>
+                            Snowflake
+                        </span>
+                        <!-- IoT / Embedded -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C8.62 12.02 8 10.59 8 9c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.59-.62 3.02-1.15 4.1z"/></svg>
+                            IoT ESP32
+                        </span>
+                        
+                        <!-- Duplicate list for seamless marquee effect -->
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            Python
+                        </span>
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+                            AWS Cloud
+                        </span>
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            SQL Databases
+                        </span>
+                        <span class="partner-logo">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 3L2 8l10 5 10-5-10-5zM2 12l10 5 10-5M2 16l10 5 10-5"/></svg>
+                            Databricks
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT & STATISTICS SECTION -->
+        <section id="about" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-tag">About Me</div>
+                        <h2 class="section-title">Academic Excellence <br>& Practical Innovation</h2>
+                    </div>
+                    <div class="section-desc">
+                        Engineering advanced data ecosystems and IoT integrations with a solid foundation in Electronics and Communication Engineering.
+                    </div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <h3>Bridging Electrical Engineering & Data Analytics</h3>
+                        <p>
+                            I am a fresher-level engineer with a passion for designing scalable, data-driven backends. My background in ECE provides me with a deep understanding of physical signals, sensor arrays, and IoT hardware like ESP32 modules. 
+                        </p>
+                        <p>
+                            Through rigorous self-study and professional training at ExcelR, I transitioned these skills to the cloud. I specialize in building data pipelines with Apache Airflow, warehousing with Databricks and Snowflake, and managing reliable AWS cloud infrastructure.
+                        </p>
+                        <div class="about-cta-group">
+                            <a href="#projects" class="btn-pill primary">View Projects</a>
+                            <a href="Resume-sadaf.pdf" download class="btn-pill secondary">Download CV</a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">84%</div>
+                            <div class="stat-label">B.Tech (ECE) GPA</div>
+                            <div class="stat-desc">Sri Venkateswara College, Kadapa</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">76%</div>
+                            <div class="stat-label">Diploma Grade</div>
+                            <div class="stat-desc">Bharath Engineering College, Kadapa</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">99%</div>
+                            <div class="stat-label">SSC Score</div>
+                            <div class="stat-desc">Bhashyam English High School</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Tools Mastered</div>
+                            <div class="stat-desc">From ETL systems to AWS services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TECHNICAL SKILLS SHOWCASE -->
+        <section id="skills" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-tag">Skills Directory</div>
+                        <h2 class="section-title">Core Competencies</h2>
+                    </div>
+                    <div class="section-desc">
+                        My technical skill set covers the entire data engineering and hardware ecosystem, from sensory data acquisition to cloud processing and warehousing.
+                    </div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Data Engineering -->
+                    <div class="skill-category-card">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4"/></svg>
+                        </div>
+                        <h3>Data Engineering</h3>
+                        <ul class="skill-list">
+                            <li>Databricks</li>
+                            <li>Apache Airflow</li>
+                            <li>Snowflake</li>
+                            <li>SQL (Postgres)</li>
+                            <li>MySQL</li>
+                            <li>Oracle SQL</li>
+                            <li>ETL Pipelines</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Cloud Systems -->
+                    <div class="skill-category-card">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.99A5.002 5.002 0 103 12c0 .28.04.55.11.81A4 4 0 003 15z"/></svg>
+                        </div>
+                        <h3>Cloud Services</h3>
+                        <ul class="skill-list">
+                            <li>AWS EC2</li>
+                            <li>AWS S3</li>
+                            <li>AWS RDS</li>
+                            <li>AWS Lambda</li>
+                            <li>CloudWatch</li>
+                            <li>AWS Athena</li>
+                            <li>Cloud Hosting</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Programming -->
+                    <div class="skill-category-card">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        </div>
+                        <h3>Languages & QAs</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>C Language</li>
+                            <li>SQL</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Pytest</li>
+                            <li>Great Expectations</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Hardware & Tools -->
+                    <div class="skill-category-card">
+                        <div class="skill-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <h3>IoT & Tooling</h3>
+                        <ul class="skill-list">
+                            <li>ESP32 Micro</li>
+                            <li>Firebase API</li>
+                            <li>IoT Vitals</li>
+                            <li>Git / GitHub</li>
+                            <li>PyCharm</li>
+                            <li>Jupyter Notebook</li>
+                            <li>Linux OS</li>
+                            <li>MS Excel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PROJECTS grid WITH DYNAMIC FILTER -->
+        <section id="projects" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-tag">Case Studies</div>
+                        <h2 class="section-title">Selected Works</h2>
+                    </div>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="iot">IoT & Cloud</button>
+                        <button class="filter-btn" data-filter="software">Software & DB</button>
+                    </div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: IoT Soldier Health Monitoring -->
+                    <div class="project-card" data-category="iot">
+                        <div class="project-display">
+                            <span class="project-badge">Hardware & Cloud</span>
+                            <!-- Virtualized Sensor Panel Graphic inside container -->
+                            <div class="project-visual">
+                                <div class="project-visual-header">
+                                    <span class="visual-title">ESP32 Monitor v1.2</span>
+                                    <span class="visual-status-indicator"></span>
+                                </div>
+                                <div class="project-visual-content">
+                                    <div class="sensor-vitals">
+                                        <div class="vital-reading">
+                                            <span class="vital-val">72 bpm</span>
+                                            <span class="vital-lbl">Heart</span>
+                                        </div>
+                                        <div class="vital-reading">
+                                            <span class="vital-val">98.6°F</span>
+                                            <span class="vital-lbl">Temp</span>
+                                        </div>
+                                    </div>
+                                    <div class="visual-graph-bar">
+                                        <div class="visual-graph-fill" style="width: 82%;"></div>
+                                    </div>
+                                    <span style="font-size: 0.55rem; color: #5C5B57;">Vitals telemetry via Firebase & Starlink</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta-row">
+                                <span class="project-date">2025</span>
+                            </div>
+                            <h3>Soldier Health Care Monitoring & Tracking</h3>
+                            <p class="project-desc">
+                                Engineered an end-to-end hardware IoT tracking system using an ESP32 microprocessor integrated with Firebase DB for real-time vitals monitoring. Incorporated Starlink connectivity to ensure robust global tracking capabilities in highly remote or conflict zones.
+                            </p>
+                            <div class="project-tags">
+                                <span>ESP32</span>
+                                <span>Firebase</span>
+                                <span>IoT</span>
+                                <span>Starlink</span>
+                                <span>Cloud Sync</span>
+                            </div>
+                            <div class="project-link-group">
+                                <a href="https://github.com/sadafalmas529" target="_blank" class="project-link">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Cafe Billing System -->
+                    <div class="project-card" data-category="software">
+                        <div class="project-display">
+                            <span class="project-badge">C & SQL</span>
+                            <!-- Virtualized Bill Graphic inside container -->
+                            <div class="project-visual" style="padding: 1.2rem;">
+                                <div class="billing-bill">
+                                    <div style="text-align: center; font-weight: bold; margin-bottom: 0.25rem;">CAFE D'ALMAS</div>
+                                    <div class="bill-line"><span>1x Premium Espresso</span><span>$4.50</span></div>
+                                    <div class="bill-line"><span>1x Warm Croissant</span><span>$3.75</span></div>
+                                    <div class="bill-line"><span>Tax (8%)</span><span>$0.66</span></div>
+                                    <div class="bill-line bill-total"><span>TOTAL DUE</span><span>$8.91</span></div>
+                                    <div style="text-align: center; font-size: 0.5rem; margin-top: 0.25rem;">*** DB INSERT OK ***</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-info">
+                            <div class="project-meta-row">
+                                <span class="project-date">2024</span>
+                            </div>
+                            <h3>Cafe Billing & Inventory System</h3>
+                            <p class="project-desc">
+                                Built a menu-driven billing system leveraging C Programming for control flow and SQL for structured database management. Automates sales tracking, customer transaction records, and inventory updates, greatly reducing manual errors in restaurant registers.
+                            </p>
+                            <div class="project-tags">
+                                <span>C Language</span>
+                                <span>SQL</span>
+                                <span>RDBMS</span>
+                                <span>Data Consistency</span>
+                            </div>
+                            <div class="project-link-group">
+                                <a href="https://github.com/sadafalmas529" target="_blank" class="project-link">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. EXPERIENCE & EDUCATION TIMELINE -->
+        <section id="experience" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-tag">Career History</div>
+                        <h2 class="section-title">Timeline</h2>
+                    </div>
+                    <div class="section-desc">
+                        My career journey is built on continuous technical upskilling and a solid academic background in engineering.
+                    </div>
+                </div>
+                
+                <div class="timeline-grid">
+                    <!-- Column 1: Experience -->
+                    <div>
+                        <h3 class="timeline-column-title">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Internships
+                        </h3>
+                        <div class="timeline-list">
+                            <div class="timeline-item">
+                                <div class="timeline-header">
+                                    <span class="timeline-role">AI & ML Intern</span>
+                                    <span class="timeline-duration">Recent</span>
+                                </div>
+                                <div class="timeline-org">
+                                    ExcelR Training Institute
+                                </div>
+                                <ul class="timeline-details">
+                                    <li>Completed intensive professional training in modern Artificial Intelligence and Machine Learning models.</li>
+                                    <li>Utilized Python (Pandas, NumPy) and Excel to perform comprehensive exploratory data analysis (EDA).</li>
+                                    <li>Built data-centric solutions, emphasizing data pre-processing, purification, and model validation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2: Education -->
+                    <div>
+                        <h3 class="timeline-column-title">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                            Academic Qualifications
+                        </h3>
+                        <div class="timeline-list">
+                            <!-- B.Tech -->
+                            <div class="timeline-item">
+                                <div class="timeline-header">
+                                    <span class="timeline-role">B.Tech in Electronics & Communication (ECE)</span>
+                                    <span class="timeline-duration">2023 - 2026</span>
+                                </div>
+                                <div class="timeline-org">
+                                    Sri Venkateswara College of Engineering, Kadapa
+                                </div>
+                                <div class="timeline-grade">Grade: 84% CGPA</div>
+                                <ul class="timeline-details">
+                                    <li>Specialized in hardware interfacing, microprocessors, signal processing, and embedded software systems.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Diploma -->
+                            <div class="timeline-item">
+                                <div class="timeline-header">
+                                    <span class="timeline-role">Diploma in Engineering</span>
+                                    <span class="timeline-duration">2020 - 2023</span>
+                                </div>
+                                <div class="timeline-org">
+                                    Bharath Engineering College, Kadapa
+                                </div>
+                                <div class="timeline-grade">Grade: 76%</div>
+                                <ul class="timeline-details">
+                                    <li>Built strong hardware engineering foundations, schematic plotting, and assembly programming.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- SSC -->
+                            <div class="timeline-item">
+                                <div class="timeline-header">
+                                    <span class="timeline-role">SSC Secondary School Education</span>
+                                    <span class="timeline-duration">Graduated 2020</span>
+                                </div>
+                                <div class="timeline-org">
+                                    Bhashyam English Medium High School, Kadapa
+                                </div>
+                                <div class="timeline-grade">Grade: 99% (Topper)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7.5 CERTIFICATIONS & CORE STRENGTHS -->
+        <section id="certifications" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-tag">Credentials</div>
+                        <h2 class="section-title">Certifications &<br>Core Strengths</h2>
+                    </div>
+                    <div class="section-desc">
+                        Formal certifications and intrinsic professional qualities that I bring to engineering and collaborative teams.
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Certifications List -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <h3 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.5px; border-bottom: 1.5px solid var(--text-primary); padding-bottom: 0.75rem;">Professional Certifications</h3>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <!-- Cert 1 -->
+                            <div style="display: flex; gap: 1.25rem; align-items: start; background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 6px; transition: var(--transition-smooth);" onmouseenter="this.style.borderColor='#121212'; this.style.boxShadow='4px 4px 0px #121212';" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.boxShadow='none';">
+                                <div style="font-size: 2rem; color: var(--accent-gold); line-height: 1;">📜</div>
+                                <div>
+                                    <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.1rem; color: var(--text-primary);">Microsoft Excel Certification</h4>
+                                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">Credential Body: Skill Nation</p>
+                                    <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 0.25rem;">Advanced numerical analytics, pivot layouts, lookup structures, and automated sheet workflows.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Cert 2 -->
+                            <div style="display: flex; gap: 1.25rem; align-items: start; background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 6px; transition: var(--transition-smooth);" onmouseenter="this.style.borderColor='#121212'; this.style.boxShadow='4px 4px 0px #121212';" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.boxShadow='none';">
+                                <div style="font-size: 2rem; color: var(--accent-gold); line-height: 1;">📊</div>
+                                <div>
+                                    <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.1rem; color: var(--text-primary);">Microsoft PowerPoint Certification</h4>
+                                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">Credential Body: Skill Nation</p>
+                                    <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 0.25rem;">Designing professional project reports, technical slides, and visual project narratives.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Cert 3 -->
+                            <div style="display: flex; gap: 1.25rem; align-items: start; background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 6px; transition: var(--transition-smooth);" onmouseenter="this.style.borderColor='#121212'; this.style.boxShadow='4px 4px 0px #121212';" onmouseleave="this.style.borderColor='var(--border-color)'; this.style.boxShadow='none';">
+                                <div style="font-size: 2rem; color: var(--accent-gold); line-height: 1;">⚡</div>
+                                <div>
+                                    <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.1rem; color: var(--text-primary);">Solar PV Installer Certification</h4>
+                                    <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">Credential Body: Synchro Serve</p>
+                                    <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 0.25rem;">Hardware engineering qualification in solar photovoltaic module layout, wiring, and grid interfacing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Core Strengths Grid -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <h3 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.5rem; letter-spacing: -0.5px; border-bottom: 1.5px solid var(--text-primary); padding-bottom: 0.75rem;">Core Strengths</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+                            <!-- Strength 1 -->
+                            <div style="border-left: 3px solid var(--accent-gold); padding-left: 1.25rem;">
+                                <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem;">Excellent Verbal & Written Communication</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.5;">
+                                    Capable of conveying complex electrical diagrams and intricate data pipelines into clear, understandable visual representations and technical reports.
+                                </p>
+                            </div>
+                            
+                            <!-- Strength 2 -->
+                            <div style="border-left: 3px solid var(--accent-gold); padding-left: 1.25rem;">
+                                <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem;">Time Management & Delivery Focus</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.5;">
+                                    Highly disciplined and detail-oriented approach to scheduling milestones, aligning IoT boards, and maintaining perfect data consistency across runs.
+                                </p>
+                            </div>
+                            
+                            <!-- Strength 3 -->
+                            <div style="border-left: 3px solid var(--accent-gold); padding-left: 1.25rem;">
+                                <h4 style="font-family: var(--font-sans); font-weight: 700; font-size: 1.15rem;">Proactive Approach to Modern Tech Stacks</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.5;">
+                                    Eager and rapid learner who transitioned seamlessly from an ECE hardware background into cloud technologies, data warehouses, ETL processes, and automation logic.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CONTACT SECTION WITH PREMIUM UNDERLINE FORM -->
+        <section id="contact" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-tag">Let's Connect</div>
+                        <h2 class="section-title">Bring Value <br>to Your Team</h2>
+                    </div>
+                    <div class="section-desc">
+                        Whether you are looking for a dedicated Data Engineer Intern, an AWS Cloud enthusiast, or a skilled IoT builder, I am ready to collaborate.
+                    </div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info-block">
+                        <div class="contact-info-heading">
+                            <h3>Contact Details</h3>
+                            <p>Feel free to reach out directly through any channel.</p>
+                        </div>
+                        
+                        <div class="contact-method-list">
+                            <!-- Email -->
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">✉</div>
+                                <div class="contact-method-details">
+                                    <h4>Email Address</h4>
+                                    <a href="mailto:sadafalmas529@gmail.com">sadafalmas529@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">📞</div>
+                                <div class="contact-method-details">
+                                    <h4>Call / WhatsApp</h4>
+                                    <a href="tel:+918978178896">+91 89781 78896</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">📍</div>
+                                <div class="contact-method-details">
+                                    <h4>Based In</h4>
+                                    <a href="https://maps.google.com/?q=Kadapa,India" target="_blank">Kadapa, Andhra Pradesh, India</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social links -->
+                        <div class="social-links">
+                            <a href="https://github.com/sadafalmas529" target="_blank" class="social-icon-btn" aria-label="GitHub Profile">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon-btn" aria-label="LinkedIn Profile">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Contact Form -->
+                    <div>
+                        <form id="portfolioContactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder=" " required autocomplete="name">
+                                    <label for="name" class="form-label">Full Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder=" " required autocomplete="email">
+                                    <label for="email" class="form-label">Email Address</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" placeholder=" " required></textarea>
+                                <label for="message" class="form-label">Project Details / Message</label>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="btn-pill primary">Send Message</button>
+                            </div>
+                            
+                            <div id="formStatus" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="logo">
+                    Sadaf<span>Almas</span><span class="logo-dot"></span>
+                </div>
+                <div class="disclaimer-text">
+                    <strong>Disclaimer:</strong> I hereby declare that the information provided in this portfolio and the attached resume is accurate, complete, and represents my professional qualifications to the best of my knowledge and belief.
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Syed Sadaf Almas. Designed with premium editorial standards. All Rights Reserved.
+                </div>
+                <div>
+                    Built with HTML5, CSS3, & Vanilla JS.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
